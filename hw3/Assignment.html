@@ -61,11 +61,356 @@
 
 
 		<h2>Assignment 3</h2>
-		<p><a href="view-source:file:///Users/chennnnn/NYU/CS/WEB/webgithub/hw3/Assignment.html">view the source-code of this <strong>Assignment page</a></p>
+		<label for="Web">Chen Web Main Page html</label>
+		<textarea id="webcode" rows="10" cols="150" >
+		<!doctype html>
+			<html lang="en-us">
+<head>
+	<title>Chen's Web</title>
+	
+  	  <meta charset="utf-8">	
+    	<link href="chenBS.css" rel="stylesheet">
+  	<link href="chenWeb.css" rel="stylesheet">
 
-		<p><a href="view-source:file:///Users/chennnnn/NYU/CS/WEB/webgithub/hw3/chenWeb.html">view the source-code of <strong>Home page</a></p>
+	<script src="chenWeb.js" language="javascript" type="text/javascript"></script>
+	
+	<!-- in file style-->
+	<style>
 
-		<p><a href="view-source:file:///Users/chennnnn/NYU/CS/WEB/webgithub/hw3/chenArt.html">view the source-code of this <strong>Art page</a></p>
+	footer {
+ 	 background-color: white;
+ 	 padding: 10px;
+ 	 text-align: center;
+ 	 color: black;
+	}
+	</style>
+</head>
+
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="chenWeb.html">Chen</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+		  <li class="active"><a href="chenWeb.html"> Home <img src="buttons/face1.gif" width=25% id="face" /></a></li>
+            <li><a href="chenArt.html"><img src="buttons/art1.gif" width=25% id="art"/> Creativity</a></li>
+            <li><a href="Assignment.html"><img src="buttons/set1.gif" width=25% id="set"/>Assignment</a></li>
+	     <li><a href="https://cs.nyu.edu/courses/spring20/CSCI-UA.0061-002/"><img src="buttons/web1.gif" width=25% id="web"/> Web Programming</a></li>
+	    <li><a href="https://www.instagram.com/daaaaachen/"><img src="buttons/ins1.gif" width=25% id="ins"/> @daaaaachen </a></li>
+	    <li><a href="https://github.com/dachendachen"><img src="buttons/github1.gif" width=25% id="github"/> @dachendachen </a></li>
+          </ul>
+        </div>
+        
+        <div id="content" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	<h1 class="page-header"> Welcome to Chen's Webpage </h1>
+	<h2>Hello I'm Chen</h2>	
+	<!-- list -->
+	<h4>Information about me at NYU: </h4>
+	<ul style="list-style-type:square;">
+	<li>I'm taking professor Hull's Web Programming class right now.</li>
+	<li>Net ID: <strong>ch3712 (ch3712@nyu.edu)</strong></li>
+	<li>N ID: N17505593</li>
+	</ul>	
+
+	<!-- table -->
+	<h4>Interests Table</h4>
+
+<table>
+  <tr>
+    <th>Hobbies</th>
+    <th>Description</th>
+     </tr>
+  <tr>
+    <td>painting/drawing</td>
+    <td>Born with. haha</td>
+   </tr>
+  <tr>
+    <td>language</td>
+    <td>Chinese, English, Japanese</td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+</table>
+
+	<h4>Currently Material Craving: Porsche Taycan</h4>
+	<p>Electric Vehicle</p>
+	<img src="Main/porsche1.jpg" width=50%>
+		
+	<p>Sports Version: Taycan VS Racing Version: 99XElectric </p> 
+	<img src="Main/porsche2.png" width=45%>
+	<img src="Main/porsche3.png" width=45%>
+        </div>
+      </div>
+    </div>
+
+<footer class="container-fluid ">
+	<br>
+	<p>Chen's Page Ends</p>
+</footer>
+    
+</body>
+
+</html>
+</textarea>
+
+
+		<label for="Assignment">Assignment Page html: different structure from Main Page</label>
+
+		<textarea id="assign" rows="10" cols="150">
+			       <div id="content" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	<h1 class="page-header"> Web Porgramming Assignments </h1>
+									
+		<h2>Assignment 1</h2>
+			<p>I wrote the Gum Game in Java: </p>
+			<img src="hw1-1.png" style="width:100%;max-width:500px">
+			<img src="hw1-2.png" style="width:100%;max-width:500px">
+			<img src="hw1-3.png" style="width:100%;max-width:500px">
+			
+		<h2>Assignment 2</h2>
+			<p>Guess Age: </p>
+			<img src="hw2-js.png" style="width:100%;max-width:500px">
+			<img src="hw2-html.png" style="width:100%;max-width:500px">
+
+		</textarea>
+
+		<label for="Arts">Arts Page html: different structure from Main Page</label>
+
+		<textarea id="arts"  rows="10" cols="150">
+			       
+        <div id="content" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	<h1 class="page-header"> Chen's Collection of Arts </h1>
+	
+	<!-- those are for images -->
+	<h2>Chen: 2019 Summer</h2>
+	<p>Main</p>
+	<img src="ARTs/dc/1.jpg" width=50% />
+	<p>Have fun 1</p>
+	<img src="ARTs/dc/2-1.jpg" width=25% />
+	<img src="ARTs/dc/2-2.jpg" width=25% />
+	<p>Have fun 2</p>
+	<img src="ARTs/dc/3-1.jpg" width=25% />
+	<img src="ARTs/dc/3-2.jpg" width=25% />
+	<p>Have fun 3</p>
+	<img src="ARTs/dc/4-1.jpg" width=25% />
+	<img src="ARTs/dc/4-2.jpg" width=25% />
+	<p>Have fun 4</p>
+	<img src="ARTs/dc/5-1.jpg" width=25% />
+	<img src="ARTs/dc/5-2.jpg" width=25% />
+
+
+
+	<h2>My mentor is Mengyi Yu</h2>
+	<h4>Professional Printing Press Artist</h4>
+	<p>A Work From 2018 Collection</p>
+	<img src="ARTs/mengyi1.jpg" width=25% />
+	<img src="ARTs/mengyi2.jpg" width=25% />
+	
+	<p>2020 RAT Year Card</p>
+	<img src="ARTs/mengyi3.jpg" width=25% />
+
+
+	
+	<h2>Manga/Comic</h2>
+	<h4>HaiKyu: A Japanese Manga about Volleyball </h4>
+	<p>Characters' Setting</p>
+	<img src="ARTs/haikyu/(1).jpg" width=25% />
+	<img src="ARTs/haikyu/(2).jpg" width=25% />
+	<img src="ARTs/haikyu/(3).jpg" width=25% />
+	<img src="ARTs/haikyu/(4).jpg" width=25% />
+	<img src="ARTs/haikyu/(5).jpg" width=25% />
+	<img src="ARTs/haikyu/(6).jpg" width=25% />
+	<img src="ARTs/haikyu/(7).jpg" width=25% />
+
+
+	<h2>Artists I Like:</h2>
+	<p>Random</p>
+	<img src="ARTs/other/1.jpeg" width=25% />
+	<img src="ARTs/other/2.jpeg" width=25% />
+	<img src="ARTs/other/3.jpeg" width=25% />
+	<img src="ARTs/other/4.jpeg" width=25% />
+	<img src="ARTs/other/5.jpeg" width=25% />
+	<img src="ARTs/other/6.jpeg" width=25% />
+	<img src="ARTs/other/7.jpeg" width=25% />
+	<img src="ARTs/other/8.jpeg" width=25% />
+	<img src="ARTs/other/9.jpeg" width=25% />
+	<img src="ARTs/other/10.jpeg" width=25% />
+	</div>
+      </div>
+    </div>
+
+    <footer class="container-fluid ">
+	<br>
+	<p>Chen's Page Ends</p>
+</footer>
+
+		</textarea>
+
+		<label for="CSS">One of CSS's</label>
+
+		<textarea id="css"  rows="10" cols="150">
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  background-color:#f5f5f5;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+
+
+
+/* image container */
+
+.imagecontainer {
+	display: block;
+	width: 400px;
+	border: 1px solid grey;
+	padding: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.imagecontainer p {
+	text-align: center;
+	font-style: italic;
+}
+
+.imagecontainer img {
+	width: 380px;
+}
+
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+			
+		</textarea>
 
 			
 
