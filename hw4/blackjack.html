@@ -2,8 +2,48 @@
 
 <html>
 
+<head>
+	<title>HW4 Blackjack Game</title>
+	<script type="text/javascript" src="blackjack.js"></script>
+</head>
 
+<body>
+	
 
+	<h1>Welcome To Chen's Blackjack Game</h1>
+	<br>
+	<h2>Please Enter Your Name:</h2>
+	<input type="text" id="name"value=""/>
+	<h2>Press START to Begin</h2>
+	<button onclick="checkCookie()">START</button>
+	<h2>Dealing a Hand</h2>
+	<p>Points for First Card:</p>
+	<input type="text" id="points1"value="0"/>
+	<img src="src/cardback.gif" id="first">
+
+	<p>Points for Second Card:</p>
+	<input type="text" id="points2" value="0"/>
+	<img src="src/cardback.gif" id="second">
+	
+	<p>Points for the hand:</p>
+	<input type="text" id="total" value="0"/>
+
+	<p>Number of Hands so far:</p>
+	<input type="text" id="count" value="0"/>
+
+	<p>Number of Identical so far: </p>
+	<input type="text" id="identical" value="0"/>
+	
+	<br>
+	
+	<input type="button" id="deal" value="Deal Cards" onClick="dealcards();" />
+	
+	<br>
+
+	<br>
+	<input type="button" id="close" value="close the pop-up window" onClick= "closewindow();" />
+
+</body>
 
 
 </html>
