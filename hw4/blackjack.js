@@ -116,9 +116,7 @@ function Blackjack(total_points){
   			var score = getCookie(name);
 			console.log(score);
 			if(score == null){
-				score = 0;
-				score ++;
-				setCookie(name,score);
+				setCookie(name,1);
 			}
 			else{
 				setCookie(name,parseInt(score)+1);
