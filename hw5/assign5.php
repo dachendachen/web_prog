@@ -1,3 +1,34 @@
+<!doctype html>
+
+<html>
+
+    <head>
+<title> Web Assignment Pig Latin</title>
+<meta charset="utf-8">
+    </head>
+
+    <body>
+    <h1>Pig Latin:</h1>
+    <br/>
+    <P>Chen Huang </P>
+    <p>Web Programming Assign 5</p>
+    <br/>
+
+    <form id="input" action="assign5.php" method="post">
+    <h4>ANY WORDS OR SENTENCE:
+    <br/>
+    <input type="text" name="input" id="input">
+    </h4>
+    
+    <h4>Do you want to it convert to Pig Latin?</h4>
+    <br/>
+    <br/>
+    <input type="radio" name="yes"> YES
+    <input type="radio" name="no"> NO
+    <input type="hidden" name ="submit"/>
+    </form>
+
+<div>
 
 
 <?php
@@ -11,8 +42,8 @@
                 $pl = pl_convertor(arr[$k]);
                 $result= $result.$pl." ";
             }
-            echo "<h2>Pig Latin Done:\n</h2>";
-            echo result;
+            print "<h2> Pig Latin Done: </h2>";
+            print result;
         }
     }
     
@@ -42,3 +73,11 @@
                return $str;
     }
     ?>
+</div>
+
+
+    </body>
+
+
+</html>
+
