@@ -1,45 +1,17 @@
-<!dictype html>
 
-<html>
-
-	<head>
-<title> Web Assignment Pig Latin</title>
-<meta charset="utf-8">
-	</head>
-
-	<body>
-	<h1>Pig Latin:</h1>
-	<br/>
-	<P>Chen Huang </P>
-	<p>Web Programming Assign 5</p>
-	<br/>
-
-	<form id="input" action="assign5.php" method="post">
-	<h4>ANY WORDS OR SENTENCE:
-	<br/>
-	<input type="text" name="input" id="input">
-	</h4>	
-	
-	<h4>Do you want to it convert to Pig Latin?</h4>
-	<br/>
-	<br/>
-	<input type="radio" name="yes" id="yes"> YES
-	<input type="radio" name="no" id="no"> NO
-    <input type="submit" name ="submit"/>
-	</form>
 
 <?php
     if(isset($_POST['submit'])){
         if(isset($_POST['yes'])){
             //do the pig latin conversion
-            $input = $_POST['inpute'];
+            $input = $_POST['input'];
             $arr = explode(" ", $input);
             $result = "";
             for($k=0;$k<count($arr);$k++){
                 $pl = pl_convertor(arr[$k]);
                 $result= $result.$pl." ";
             }
-            echo "Pig Latin Done:\n";
+            echo "<h2>Pig Latin Done:\n</h2>";
             echo result;
         }
     }
@@ -70,18 +42,3 @@
                return $str;
     }
     ?>
-
-	</body>
-
-
-</html>
-
-
-
-
-
-
-
-
-
-
