@@ -22,55 +22,66 @@
     
     <h4>Do you want to it convert to Pig Latin?</h4>
     <br/>
-    <br/>
+
     <input type="radio" name="yes"> YES
     <input type="radio" name="no"> NO
-    <input type="hidden" name ="submit"/>
+    <br/>
+    <input type="submit" name ="submit"/>
     </form>
 
 <div>
 
-
 <?php
     if(isset($_POST['submit'])){
+        $input = $_POST['input'];
         if(isset($_POST['yes'])){
             //do the pig latin conversion
-            $input = $_POST['input'];
-            $arr = explode(" ", $input);
-            $result = "";
-            for($k=0;$k<count($arr);$k++){
-                $pl = pl_convertor(arr[$k]);
-                $result= $result.$pl." ";
+            pl_convertor($input);
             }
-            print "<h2> Pig Latin Done: </h2>";
-            print result;
+        else{
+            print "<h2> Your input is: </h2>";
+            print "<br/>";
+            print $input;
         }
     }
     
-    //input parameter is a string
-    function pl_convertor($str){
-        $vowels = array('a','e','u','i','o');
-        //if the word start from a vowel, adding -way at the end
-        $len = strlen($str);
-        $str = strtolower($str);
-        //character array:
-        $char = str_split($str);
-        for($i=0; $i<$len;$i++){
-            if(in_array($char[$i],$vowels){
-               if($i == 0){
-               $str = $str."-way";
-               }
-               else{
-                    $str = substr($str,0,$i-1);
-               $str = $str."-";
-               for($j=0;$j<$i,$j++){
-                    $str = $str.$char[$j];
-               }
-               $str = $str."ay";
-               }
-               }
+    //input parameter is a LONG string
+    function pl_convertor($input){
+        //store the punctuation
+        $punc = $input[strlen($input)-1];
+        $input[-1] =" ";
+        $input= trim($input);
+        $vowels = array('a','e','u','i','o','I','E','U','A','O');
+        $arr = explode(" ", $input);
+        //print "<h2> Pig Latin Done: </h2>";
+        for($k=0;$k<count($arr);$k++){
+            if($k!=0)$arr[$k]=strtolower($arr[$k]);
+            //print "<br/>";
+         //print $arr[$k];
+           //print "<br/>";
+            for($i=0; $i<strlen($arr[$k]);$i++){
+                //if the word start from a vowel, adding -way at the end
+                if(in_array($arr[$k][$i],$vowels)){
+                    if($i==0){
+                        $str= $arr[$k]."-way";
+                    }
+                    else{
+                        $str = substr($arr[$k],$i);
+                        $str = $str."-";
+                        for($j=0;$j<$i;$j++){
+                            $str = $str.$arr[$k][$j];
+                        }
+                        $str = $str."ay";
+                    }
+                    if($k!=0){
+                        $str = " ".$str;
+                    }
+                    print $str;
+                    break;
+                }
+            }
         }
-               return $str;
+        print $punc; //refresh the punctuation
     }
     ?>
 </div>
