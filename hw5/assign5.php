@@ -53,7 +53,8 @@
         $input= trim($input);
         $vowels = array('a','e','u','i','o','I','E','U','A','O');
         $arr = explode(" ", $input);
-        //print "<h2> Pig Latin Done: </h2>";
+        print "<h3> Pig Latin Done: </h3>";
+        print "<h4> ";
         for($k=0;$k<count($arr);$k++){
             if($k!=0)$arr[$k]=strtolower($arr[$k]);
             //print "<br/>";
@@ -82,6 +83,7 @@
             }
         }
         print $punc; //refresh the punctuation
+          print "</h4>";
     }
     ?>
 </div>
