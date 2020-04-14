@@ -25,7 +25,7 @@ height:25px;
     <input type="radio" name="Histogram"> Histogram
     <br/>
     <br/>
-    <input type = "Submit" name = "Submit" value = "Select a Radio Button">
+    <input type = "Submit" name = "Submit" value = "click one to submit">
     </form>
 
 <?php
