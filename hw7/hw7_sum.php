@@ -3,7 +3,7 @@
 
 <html>
 <head>
-    <title>Assignment 6 Result Page</title>
+    <title>HW 7 Summary Page</title>
 <style>
 img{
 width:50px;
@@ -13,11 +13,11 @@ height:25px;
 </head>
 <body bgcolor=yellow>
 
-    <p>Chen, web programming hw6</p>
+    <p>Chen, web programming hw7 GD</p>
 
     <h1>Results Of Animation Poll</h1>
 
-    <form action="assign6_sum.php"method="post">
+    <form action="hw7_sum.php"method="post">
 
     <input type="radio" name="email"> Email List
     <br/>
@@ -29,13 +29,12 @@ height:25px;
     </form>
 
 <?php
-    function draw($n,$color){
+    
+    function draw_gd($n,$num){
             for($j=0;$j<$n;$j++){
-                print "<img src=\"$color.jpg\">";
+                echo "<img src=\"$num.php\">";
             }
         }
-        
-    
     if(isset($_POST["Submit"])){
         $file='info.txt';
         $data = file_get_contents($file);
@@ -50,11 +49,11 @@ height:25px;
             }
         }
     }
-    
     if(isset($_POST["Histogram"])){
         print "<br/>";
         print "Chart of Poll Results: <br/>";
         print "<br/>";
+        
         $naruto=0; $yourname =0; $onepiece = 0;
         $mob = 0; $onepunch = 0;
         
@@ -68,23 +67,22 @@ height:25px;
         }
         
 
-        print "<div>Naruto</div>"; draw($naruto,1);
+        print "<div>Naruto</div>"; draw_gd($naruto,1);
         print "<br/>";
-        print "<div>Your Name </div>"; draw($yourname,2);
+        print "<div>Your Name </div>"; draw_gd($yourname,2);
         print "<br/>";
-        print "<div>Mob Psycho</div>"; draw($mob,3);
+        print "<div>Mob Psycho</div>"; draw_gd($mob,3);
         print "<br/>";
-        print "<div>One Piece</div>"; draw($onepiece,4);
+        print "<div>One Piece</div>"; draw_gd($onepiece,4);
         print "<br/>";
-        print "<div>One Punch Man</div>"; draw($onepunch,5);
+        print "<div>One Punch Man</div>"; draw_gd($onepunch,5);
         print "<br/>";
 
+ 
+        
     }
     }
-
-    
-    ?>
+?>
 
 </body>
 </html>
-
