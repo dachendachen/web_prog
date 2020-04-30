@@ -1,8 +1,8 @@
-popeye1	popeye1.jpg 20 8.60
-popeye2 popeye2.jpg 10 7.60
-popeye3 popeye3.jpg 5 8.04
-popeye4 popeye4.jpg 20 8.60
-popeye5 popeye5.jpg 15 7.80
-popeye6 popeye6.jpg 10 7.80
-popeye7 popeye7.jpg 20 8.40
-popeye8 popeye8.jpg 20 8.60
+popeye1 10 8.88
+Popeye2 10 8.88
+Popeye3 10 8.88
+Popeye4 10 8.88
+Popeye5 10 8.88
+Popeye6 10 8.88
+Popeye7 10 8.88
+Popeye8 10 8.88
