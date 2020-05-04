@@ -11,16 +11,21 @@ img{
 width: 250px;
 height: 250px
 }
+body{
+    text-align:center;
+
+}
 </style>
 </head>
 <body>
 
 <h1>Welcome to Popeye Magazine Online Store</h1>
-<p style="color: blue;"> WEB HW8 Chen </p>
+<p style="color: blue;"> Web HW9 Chen </p>
 
 <h2>Our Available Magazines</h2>
 
 <?php
+    echo"<form action=\"shop.php\" method=\"post\">";
     $issues=array("2019 November Issue871","2014 JUlY Issue807","2014 APRIL Issue804","2020 Feb Issue874","2017 APRIL Issue840","2015 Feb Issue814","2019 APRIL Issue864 ","2019 MAY Issue865");
     $dis= array("What music you want to listen now?","The Portland City Guide ","City Boys ABC","Style Sample 2020","Spring fashions ","Style Sample 2015","Taiwan City Guide","Tokyo, My Street");
     
@@ -35,7 +40,6 @@ height: 250px
 
         if($stock == 0){
             $image = "source/outofstock.jpg";
-            $stock = "N/A";
             $price = "0.0";
         }
         else{
@@ -45,12 +49,22 @@ height: 250px
         echo "<img src=$image>";
         echo "<h4>Popeye Magazine:".$issues[$i]."</h4>";
         echo "<p>".$dis[$i]."</p>";
-        echo "<p>Stock: $stock </p>";
         echo "<p>Price: $ $price </p>";
+        //echo "..." for the order button
         echo "<br/>";
         echo "<br/>";
     }
     
+    echo"<input type=submit value=\"CONFIRM\" name=\"submit\">";
+    echo "</form>"
+    
+    /*
+     if no order, pop an alert
+    if(isset($_POST["submit"])){
+        
+    }
+     echo "<script>window.open('confirm.php');</script>";
+    */
     ?>
 
 
