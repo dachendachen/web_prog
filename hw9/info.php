@@ -38,13 +38,19 @@ display: inline-block;
 <?php
     if(isset($_POST["submit"])){
         if(!isset($_POST["firstname"])){
-            alert("please enter your information");
+            echo '<script type="text/javascript">';
+            echo 'alert("please enter your firstname")';
+            echo '</script>';
         }
         if(!isset($_POST["lastname"])){
-            alert("please enter your information");
+            echo '<script type="text/javascript">';
+            echo 'alert("please enter your lastname")';
+            echo '</script>';
         }
         if(!isset($_POST["email"])){
-            alert("please enter your information");
+            echo '<script type="text/javascript">';
+            echo 'alert("please enter your email");';
+            echo '</script>';
         }
         else{
             $_SESSION["firstname"]=$_POST["firstname"];

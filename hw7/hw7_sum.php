@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 <html>
@@ -12,7 +13,6 @@ height:25px;
 </style>
 </head>
 <body bgcolor=yellow>
-
     <p>Chen, web programming hw7 GD</p>
 
     <h1>Results Of Animation Poll</h1>

@@ -5,4 +5,4 @@ popeye4 10 8.88
 popeye5 10 8.88
 popeye6 10 8.88
 popeye7 10 8.88
-popeye8 0 8.88
+popeye8 0  8.88
